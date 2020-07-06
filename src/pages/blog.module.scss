@@ -1,0 +1,52 @@
+@import '../styles/colours.scss';
+
+.posts {
+    list-style-type: none;
+    margin: 0;
+}
+
+.post {
+    margin: 1rem 0;
+
+    a {
+        background: $panel;
+        color: $dark-coal;
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background: $panel-hover;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $dark-coal;
+        font-size: 1rem;
+    }
+}
+
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden; 
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.tags li {
+    float: left; 
+}
+  
+.tag {
+    background: $dark-coal;
+    color: $white;
+    display: inline-block;
+    padding: 0 20px 0 23px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+}

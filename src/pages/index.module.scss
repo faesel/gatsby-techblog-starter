@@ -1,0 +1,106 @@
+@import '../styles/colours.scss'; 
+
+.heading {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.subheading {
+    display: flex;
+
+    .subheadingphoto {
+        display: inline-block;
+        width: 50%;
+    
+        img {
+            padding: 10px;
+        }
+    
+    }
+    
+    .subheadingdescription {
+        display: inline-block;
+        width: 50%;
+        font-size: 1rem;
+    
+        p {
+            padding: 10px;
+        }
+    }
+}
+
+
+.bloglink {
+    background-color: $orange;
+    text-align: center;
+
+    a:hover {
+        color: $white;
+    }
+
+    p {
+        font-size: 3rem;
+        line-height: 4rem;
+        padding: 10px;
+    }
+
+    svg {
+        padding-top: 20px;   
+    }
+
+    .bloglinkicon {
+        font-size: 4rem;
+    }
+}
+
+.skills {
+    display: flex;
+
+    .skillitem {
+        display: inline-block;
+        width: 50%;
+        margin: 10px;
+    }
+
+    .skilliconone {
+        color: $green;
+        font-size: 3rem;
+    }
+    .skillicontwo {
+        color: $orange;
+        font-size: 3rem;
+    }
+    .skilliconthree {
+        color: $yellow;
+        font-size: 3rem;
+    }
+    .skilliconfour {
+        color: $blue;
+        font-size: 3rem;
+    }
+}
+
+.contact {
+    background-color: $green;
+    
+    a:hover {
+        color: $white;
+    }
+
+    h2 {
+        font-size: 3rem;
+        padding: 10px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 1rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contacticon {
+        font-size: 2.5rem;
+    }
+}

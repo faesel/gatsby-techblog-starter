@@ -1,0 +1,25 @@
+@import '../styles/colours.scss';
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem;
+    padding-bottom: 0px; //To allow the footer to be flush
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: $light-coal;
+}
+
+a:hover {
+    color: $green;
+}

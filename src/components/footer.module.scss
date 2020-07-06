@@ -1,0 +1,35 @@
+@import '../styles/colours.scss';
+
+.footer {
+    margin-top: 3rem;
+    background-color: $dark-coal;
+}
+
+.social {
+    font-size: 1rem;
+    background-color: $light-coal;
+    padding: 20px;
+
+    a {
+        text-decoration: none;
+        color: $white;    
+        padding:20px;
+        display: inline-block;
+    }
+
+    a:hover {
+        color: $green;
+    }
+}
+
+.copyright {
+    background-color: $dark-coal;
+
+    p {
+        color: $white;
+        padding: 20px;
+        padding-left: 40px;
+        padding-bottom: 0px;
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,59 @@
+@import '../styles/colours.scss';
+
+.header {
+    padding: 1rem 0 2.5rem;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.title {
+    color: $dark-coal;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav-list {
+    margin: 0;
+}
+
+.nav-item {
+    color: $white;
+    font-size: .9rem;
+    display: inline-block;
+
+    h4 {
+        margin-right: 1.3rem;
+        padding: 10px;
+    }
+}
+
+.nav-item:hover {
+    color: $dark-coal;
+}
+
+.active-nav-item {
+    color: $dark-coal;
+}
+
+.nav1 {
+    background-color: $green
+}
+
+.nav2 {
+    background-color: $blue;
+}
+
+.nav3 {
+    background-color: $yellow;
+}
+
+.nav4 {
+    background-color: $orange;
+}
+
+.nav5 {
+    background-color: $dark-orange;
+}

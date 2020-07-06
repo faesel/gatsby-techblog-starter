@@ -1,0 +1,30 @@
+@import '../styles/colours.scss';
+
+.contactbox {
+    list-style-type: none;
+    margin: 0;
+}
+
+.contactoption {
+    a {
+        background: $panel;
+        color: $dark-coal;
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background: $panel-hover;
+    }
+
+    .content {
+        flex-direction: flex;
+        padding:20px;
+
+        .contenticon {
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
+    }
+}

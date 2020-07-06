@@ -1,0 +1,50 @@
+{
+  "name": "faesel-blog",
+  "private": true,
+  "description": "Gatsby blog using contentful to power the content",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "env-cmd -f .env gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "publish": "env-cmd -f .env.production gatsby build && gh-pages -d public -b master",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@contentful/rich-text-from-markdown": "^14.1.1",
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@deckdeckgo/highlight-code": "^1.1.1",
+    "disqus-react": "^1.0.9",
+    "gatsby": "^2.23.11",
+    "gatsby-plugin-feed": "^2.5.9",
+    "gatsby-plugin-gtag": "^1.0.13",
+    "gatsby-plugin-react-helmet": "^3.3.6",
+    "gatsby-plugin-sass": "^2.3.6",
+    "gatsby-plugin-sharp": "^2.6.14",
+    "gatsby-plugin-sitemap": "^2.4.10",
+    "gatsby-plugin-typography": "^2.5.6",
+    "gatsby-remark-highlight-code": "^1.4.2",
+    "gatsby-remark-images": "^3.3.13",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-contentful": "^2.3.18",
+    "gatsby-source-filesystem": "^2.3.14",
+    "gatsby-transformer-remark": "^2.8.19",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.10.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-irving": "^0.16.19"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "gh-pages": "^3.0.0",
+    "prettier": "^1.19.1"
+  }
+}
