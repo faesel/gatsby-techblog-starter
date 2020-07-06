@@ -1,16 +1,77 @@
-2h 47 mins
-
 ## 🏃‍♂️ Running
 
 1. To run for development - `npm run develop`
 2. To clean out temp files - `npm run clean`
 
-Urls:
-
+Url for accessing the website:
 `http://localhost:8000`
+
+Url for accessing graphql:
 `http://localhost:8000/___graphql`
 
-## 👩‍💻 Rendering code
+## Configuration (REQUIRED)
+
+This blog is setup to be easy to configure and get up and running. There are only really two sources of configuration required, in Contentful and in code. I have added some other optional steps if you want to customise further.
+
+### Prerequisites
+
+Before you can begin you need the following free accounts setup:
+
+1. Google account for Google Analytics
+2. Contentful account
+3. Disqus account
+
+### Contentful
+
+[Contentful](https://www.contentful.com/) is a popular API first content management system. Registration is free and it fulfills all the needs of this blog.
+
+After registering on Contentful your able to define a content model for your blog. This basically represents the structure needed for every blog post.
+
+The structure for this blog is as follows:
+
+Name | Type 
+--- | --- 
+Hero | Media
+Title | Short Text
+Tags | Short Text, List
+Slug | Short Text
+Date Published | Date & Time
+BodyM | Long Text (Set to markdown)
+
+Once this is setup you can source your `Space Id` and `Access token` under `Settings` > `General Settings` to give the blog access.
+
+### In code
+
+All the code changes needed can be found in the `gatsby-config.js` file. The main ones to change are as follows:
+
+```
+module.exports = {
+    siteMetadata: {
+        title: 'FAESEL.COM',
+        author: 'Faesel Saeed',
+        description: '',
+        siteUrl: 'https://www.faesel.com', //Use the fully qualified url
+        social: {
+            twitter: 'https://twitter.com/@faeselsaeed', //Use the fully qualified url
+            linkedin: '',
+            github: '',
+            flickr: '',
+            email: 'someone@gmail.com'
+        },
+    },
+}
+```
+
+Along with the config file there are also some environment variables that need setting:
+
+```
+CONTENTFUL_SPACE_ID=CAN BE SOURCED FROM CONTENTFUL SETTINGS
+CONTENTFUL_ACCESS_TOKEN=CAN BE SOURCED FROM CONTENTFUL SETTINGS
+GOOGLE_TRACKING_ID=CAN BE SOURCED FROM GOOGLE ANAYTICS
+GATSBY_DISQUS_NAME=CAN BE SOURCED FROM DISCUS
+```
+
+## 👩‍💻 Customising Rendering code (OPTIONAL)
 
 Code styles can be found here:
 https://docs.deckdeckgo.com/components/code/
@@ -18,7 +79,7 @@ https://docs.deckdeckgo.com/components/code/
 Link to gatsby docs here:
 https://www.gatsbyjs.org/packages/gatsby-remark-highlight-code/#theme
 
-## 🎨 Typography & Icons
+## 🎨 Typography & Icons (OPTIONAL)
 
 Typography
 
@@ -28,24 +89,20 @@ Icons
 
 https://react-icons.github.io/react-icons/icons?name=fi
 
-## 💫 Deploy
+## 💫 Deploy (OPTIONAL)
 
-Code is designed to make use of github pages
+The deployment script in the packages file is intended to be pushed to use GitHub Pages personal repo. Due to this it pushes to the `master` branch (with personal repo's you dont have a choice on this).
 
-1. To clean out temp files - `npm run deploy`
+1. To deploy changes - `npm run deploy`
 
 Link:
 
-https://faesel.github.io/faesel-blog/
+https://username.github.io/
 
-## SEO
+## Colors (OPTIONAL)
 
-https://github.com/nfl/react-helmet
-
-## Background patterns 
-
-https://www.toptal.com/designers/subtlepatterns/page/6/
-
-## Colors
+Color palette was chosen from coolors.co.
 
 https://coolors.co/palettes/trending
+
+All colors can be found in `styles.scss` file
