@@ -1,3 +1,7 @@
+# Introduction
+
+This is a tech blog template built with Gatsby, Contentful and Disqus. Its free to use for anyone, and really easy to configure. Check it out here [faesel.com](https://www.faesel.com).
+
 ## 🏃‍♂️ Running
 
 1. To run for development - `npm run develop`
@@ -9,7 +13,7 @@ Url for accessing the website:
 Url for accessing graphql:
 `http://localhost:8000/___graphql`
 
-## Configuration (REQUIRED)
+## 🔧 Configuration (REQUIRED)
 
 This blog is setup to be easy to configure and get up and running. There are only really two sources of configuration required, in Contentful and in code. I have added some other optional steps if you want to customise further.
 
@@ -40,7 +44,7 @@ BodyM | Long Text (Set to markdown)
 
 Once this is setup you can source your `Space Id` and `Access token` under `Settings` > `General Settings` to give the blog access.
 
-### In code
+###  In code
 
 All the code changes needed can be found in the `gatsby-config.js` file. The main ones to change are as follows:
 
@@ -71,25 +75,7 @@ GOOGLE_TRACKING_ID=CAN BE SOURCED FROM GOOGLE ANAYTICS
 GATSBY_DISQUS_NAME=CAN BE SOURCED FROM DISCUS
 ```
 
-## 👩‍💻 Customising Rendering code (OPTIONAL)
-
-Code styles can be found here:
-https://docs.deckdeckgo.com/components/code/
-
-Link to gatsby docs here:
-https://www.gatsbyjs.org/packages/gatsby-remark-highlight-code/#theme
-
-## 🎨 Typography & Icons (OPTIONAL)
-
-Typography
-
-https://www.gatsbyjs.org/docs/typography-js/
-
-Icons 
-
-https://react-icons.github.io/react-icons/icons?name=fi
-
-## 💫 Deploy (OPTIONAL)
+## 💫 Deploy
 
 The deployment script in the packages file is intended to be pushed to use GitHub Pages personal repo. Due to this it pushes to the `master` branch (with personal repo's you dont have a choice on this).
 
@@ -99,10 +85,29 @@ Link:
 
 https://username.github.io/
 
-## Colors (OPTIONAL)
+## 🎨 Colors (OPTIONAL)
 
 Color palette was chosen from coolors.co.
 
 https://coolors.co/palettes/trending
 
 All colors can be found in `styles.scss` file
+
+
+## 👩‍💻 Customising Rendering code (OPTIONAL)
+
+Code styles can be found here:
+https://docs.deckdeckgo.com/components/code/
+
+Link to gatsby docs here:
+https://www.gatsbyjs.org/packages/gatsby-remark-highlight-code/#theme
+
+## 🖊 Typography & Icons (OPTIONAL)
+
+Typography
+
+https://www.gatsbyjs.org/docs/typography-js/
+
+Icons 
+
+https://react-icons.github.io/react-icons/icons?name=fi
