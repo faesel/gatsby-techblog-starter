@@ -52,13 +52,14 @@ const Blog = props => {
   return (
     <Layout>
       <Head 
+        siteTitle={props.data.contentfulBlog.title}
         title={props.data.contentfulBlog.title}
-        ogTitle={props.data.contentfulBlog.title}
-        ogDescription={props.data.contentfulBlog.bodym.childMarkdownRemark.excerpt}
-        ogUrl={`${props.data.site.siteMetadata.siteUrl}/blog/${props.data.contentfulBlog.slug}`}
-        ogImageUrl={props.data.contentfulBlog.hero.file.url}
-        ogImageAlt={props.data.contentfulBlog.hero.title} 
-        ogType='article' />
+        description={props.data.contentfulBlog.bodym.childMarkdownRemark.excerpt}
+        url={`${props.data.site.siteMetadata.siteUrl}/blog/${props.data.contentfulBlog.slug}`}
+        imageUrl={props.data.contentfulBlog.hero.file.url}
+        imageAlt={props.data.contentfulBlog.hero.title} 
+        type='article'
+        datePublished={props.data.contentfulBlog.datePublished} />
 
       <h1>{props.data.contentfulBlog.title}</h1>
       <p><b>Date Published:</b> {props.data.contentfulBlog.datePublished} <b>Reading Time:</b> {props.data.contentfulBlog.bodym.childMarkdownRemark.timeToRead} minutes</p>
