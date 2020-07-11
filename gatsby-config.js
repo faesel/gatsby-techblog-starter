@@ -7,6 +7,7 @@ module.exports = {
         social: {
             linkedin: 'https://www.linkedin.com/in/faesel-saeed-a97b1614',
             twitter: 'https://twitter.com/@faeselsaeed',
+            twitterUsername: '@faeselsaeed',
             github: 'https://github.com/faesel',
             flickr: 'https://www.flickr.com/photos/faesel/',
             email: 'faesel@outlook.com'
