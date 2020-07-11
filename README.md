@@ -1,6 +1,6 @@
 # Introduction
 
-This is a tech blog template built with Gatsby, Contentful and Disqus. Its free to use for anyone, and really easy to configure. Check it out here [faesel.com](https://www.faesel.com).
+This is a tech blog template built with Gatsby, Contentful and Disqus. Its free to use for anyone, and really easy to configure. Check it out here [faesel.com](https://www.faesel.com/blog/gatsby-tech-blog-starter).
 
 ## 🏃‍♂️ Running
 
