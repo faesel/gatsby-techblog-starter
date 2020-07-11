@@ -6,7 +6,7 @@ import Head from '../components/head'
 const ProjectsPage = () => {
     return (
         <Layout>
-            <Head title="Projects"/>
+            <Head siteTitle="Projects"/>
             <h1>Projects</h1>
             <p>Coming Soon!</p>
         </Layout>

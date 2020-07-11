@@ -22,7 +22,7 @@ const IndexPage = () => {
 
     return (
         <Layout>
-            <Head title="Home" />
+            <Head siteTitle="Home" />
             <h1>Home</h1>
             <p className={indexStyles.heading}>Hi I'm {author}, a full-stack developer, team lead & mentor.</p>
             <div className={indexStyles.subheading}>
