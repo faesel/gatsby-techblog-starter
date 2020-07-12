@@ -88,9 +88,11 @@ const Head = ({ siteTitle, title, url, description, imageUrl, imageAlt, type, da
                     {JSON.stringify(ldJsonBreadcrumb)}
                 </script>
                 
-                <script type="application/ld+json">
-                    {JSON.stringify(jsonldArticle)}
-                </script>
+                {type === 'article' && (
+                   <script type="application/ld+json">
+                        {JSON.stringify(jsonldArticle)}
+                    </script>
+                )}
 
                 <meta name="twitter:card" content="summary_large_image"></meta>
                 <meta name="twitter:site" contact={data.site.siteMetadata.social.twitterUsername}></meta>
