@@ -57,7 +57,7 @@ const Blog = props => {
         title={props.data.contentfulBlog.title}
         description={props.data.contentfulBlog.bodym.childMarkdownRemark.excerpt}
         url={`${props.data.site.siteMetadata.siteUrl}/blog/${props.data.contentfulBlog.slug}`}
-        imageUrl={props.data.contentfulBlog.hero.file.url}
+        imageUrl={`https:${props.data.contentfulBlog.hero.file.url}`}
         imageAlt={props.data.contentfulBlog.hero.title} 
         type='article'
         datePublished={props.data.contentfulBlog.iso8601DatePublished} />
@@ -71,7 +71,7 @@ const Blog = props => {
             )
           )}
       </ol>
-      <img src={props.data.contentfulBlog.hero.file.url} alt={props.data.contentfulBlog.hero.title}></img>
+      <img src={`https:${props.data.contentfulBlog.hero.file.url}`} alt={props.data.contentfulBlog.hero.title}></img>
       { props.data.contentfulBlog.bodym && (
         <div dangerouslySetInnerHTML={{ 
           __html: props.data.contentfulBlog.bodym.childMarkdownRemark.html }}>

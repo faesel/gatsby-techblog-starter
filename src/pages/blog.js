@@ -44,7 +44,7 @@ const BlogPage = () => {
                             <Link to={`/blog/${edge.node.slug}`}>
                                 <h2>{edge.node.title}</h2>
                                 <p><b>Date Published: </b>{edge.node.datePublished} <b>Reading Time:</b> {edge.node.bodym.childMarkdownRemark.timeToRead} minutes</p>
-                                <img src={edge.node.hero.file.url} alt={edge.node.hero.title}></img>
+                                <img src={`https:${edge.node.hero.file.url}`} alt={edge.node.hero.title}></img>
                                 <p>{edge.node.bodym.childMarkdownRemark.excerpt}</p>
                                 <ol className={blogStyles.tags}>
                                     {edge.node.tags.map(tag =>
