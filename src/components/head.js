@@ -54,14 +54,27 @@ const Head = ({ siteTitle, title, url, description, imageUrl, imageAlt, type, da
             '@type': 'ImageObject',
             'url': `${imageUrl}`
         },
+        'mainEntityOfPage': {
+            '@type': 'WebPage',
+            '@id': `${data.site.siteMetadata.siteUrl}`
+         },
         'inLanguage': 'en',
         'name': `${title}`,
         'headline': `${title}`,
         'url': `${url}`,
         'datePublished': `${datePublished}`,
+        'dateModified': `${datePublished}`,
         'author': {
             '@type': 'Person',
             'name': `${data.site.siteMetadata.author}`
+        },
+        'publisher' : {
+            '@type': 'Organization',
+            'name': `${data.site.siteMetadata.author}`,
+            'logo': {
+                '@type': 'ImageObject',
+                'url': `https://images.ctfassets.net/wjg1udsw901v/4RI5COhSqeYFCbvzYFeFZW/af52277ab41da56c1be5f72f316befe9/logo.png`
+            }
         }
     };
 

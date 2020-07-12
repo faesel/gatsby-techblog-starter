@@ -30,6 +30,7 @@ export const query = graphql`
               title
             }
             datePublished(formatString: "MMMM Do, YYYY")
+            iso8601DatePublished: datePublished(formatString: "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]")
             bodym {
               childMarkdownRemark {
                 excerpt(pruneLength: 50)
@@ -59,7 +60,7 @@ const Blog = props => {
         imageUrl={props.data.contentfulBlog.hero.file.url}
         imageAlt={props.data.contentfulBlog.hero.title} 
         type='article'
-        datePublished={props.data.contentfulBlog.datePublished} />
+        datePublished={props.data.contentfulBlog.iso8601DatePublished} />
 
       <h1>{props.data.contentfulBlog.title}</h1>
       <p><b>Date Published:</b> {props.data.contentfulBlog.datePublished} <b>Reading Time:</b> {props.data.contentfulBlog.bodym.childMarkdownRemark.timeToRead} minutes</p>
