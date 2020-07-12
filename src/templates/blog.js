@@ -53,7 +53,7 @@ const Blog = props => {
   return (
     <Layout>
       <Head 
-        siteTitle={props.data.contentfulBlog.title}
+        pageTitle={props.data.contentfulBlog.title}
         title={props.data.contentfulBlog.title}
         description={props.data.contentfulBlog.bodym.childMarkdownRemark.excerpt}
         url={`${props.data.site.siteMetadata.siteUrl}/blog/${props.data.contentfulBlog.slug}`}

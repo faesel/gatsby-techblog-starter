@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import favicon from '../../static/favicon.ico'
 
-const Head = ({ siteTitle, title, url, description, imageUrl, imageAlt, type, datePublished }) => {
+const Head = ({ pageTitle, title, url, description, imageUrl, imageAlt, type, datePublished }) => {
     const data = useStaticQuery(graphql`
         query {
             site {
@@ -80,7 +80,7 @@ const Head = ({ siteTitle, title, url, description, imageUrl, imageAlt, type, da
 
     return (
         <>
-            <Helmet title={`${siteTitle} | ${data.site.siteMetadata.title}`} />
+            <Helmet title={`${pageTitle} | ${data.site.siteMetadata.title}`} />
             <Helmet>
                 <link rel="icon" href={favicon} />
                 
@@ -102,7 +102,7 @@ const Head = ({ siteTitle, title, url, description, imageUrl, imageAlt, type, da
                 <meta name="twitter:image" content={imageUrl}></meta>
 
                 <meta property="og:locale" content="en_GB" />
-                <meta property="og:site_name" content={data.site.siteMetadata.siteTitle} />
+                <meta property="og:site_name" content={data.site.siteMetadata.title} />
                 <meta property="og:title" content={title}></meta>
                 <meta property="og:url" content={url}></meta>
                 <meta property="og:description" content={description}></meta>

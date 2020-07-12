@@ -25,7 +25,7 @@ const ContactPage = () => {
     
     return (
         <Layout>
-            <Head siteTitle="Contact"/>
+            <Head pageTitle="Contact"/>
             <h1>Contact Me</h1>
 
             <p>I may take up to a day to get back to you if you do decide to contact me, so please be patient.</p>
