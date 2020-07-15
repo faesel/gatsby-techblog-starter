@@ -58,7 +58,7 @@ Slug | Short Text
 Date Published | Date & Time
 BodyM | Long Text (Set to markdown)
 
-Once this is setup you can source your `Space Id` and `Access token` under `Settings` > `API Keys` to give the blog access.
+Once this is setup you can source your `Space Id` and `Access token` under `Settings` > `API Keys` > `Content delivery / preview tokens`
 
 ###  In code
 

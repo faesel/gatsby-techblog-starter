@@ -56,7 +56,7 @@
                         },
                         {
                             "size": {
-                                "min": 50
+                                "max": 50
                             },
                             "message": "Try to shorten the slug"
                         },
