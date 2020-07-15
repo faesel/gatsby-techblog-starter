@@ -31,6 +31,22 @@ Before you can begin you need the following free accounts setup:
 
 After registering on Contentful your able to define a content model for your blog. This basically represents the structure needed for every blog post.
 
+Below are two ways to create the schema needed for this template:
+
+#### Using contentful importer
+
+Simply run the following command:
+
+```
+npm run setup SPACE_ID CONTENTFUL_MANAGEMENT_TOKEN 
+```
+
+A json template is located in the root of this project > contentful > export.json that contains the full structure needed.
+
+**Note** The space id and management token can be found by navigating to `Settings` > `API Keys` > `Content Management Tokens`.
+
+#### Creating it manually
+
 The structure for this blog is as follows:
 
 Name | Type 
@@ -42,7 +58,7 @@ Slug | Short Text
 Date Published | Date & Time
 BodyM | Long Text (Set to markdown)
 
-Once this is setup you can source your `Space Id` and `Access token` under `Settings` > `General Settings` to give the blog access.
+Once this is setup you can source your `Space Id` and `Access token` under `Settings` > `API Keys` to give the blog access.
 
 ###  In code
 

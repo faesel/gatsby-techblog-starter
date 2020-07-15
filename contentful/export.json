@@ -1,0 +1,143 @@
+{
+    "contentTypes": [
+        {
+            "name": "Blog",
+            "description": "",
+            "displayField": "title",
+            "fields": [
+                {
+                    "id": "hero",
+                    "name": "Hero",
+                    "type": "Link",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "linkType": "Asset"
+                },
+                {
+                    "id": "title",
+                    "name": "Title",
+                    "type": "Symbol",
+                    "localized": false,
+                    "required": true,
+                    "validations": [
+                        {
+                            "unique": true
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "id": "tags",
+                    "name": "Tags",
+                    "type": "Array",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false,
+                    "items": {
+                        "type": "Symbol",
+                        "validations": []
+                    }
+                },
+                {
+                    "id": "slug",
+                    "name": "Slug",
+                    "type": "Symbol",
+                    "localized": false,
+                    "required": true,
+                    "validations": [
+                        {
+                            "unique": true
+                        },
+                        {
+                            "size": {
+                                "min": 50
+                            },
+                            "message": "Try to shorten the slug"
+                        },
+                        {
+                            "regexp": {
+                                "pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+                                "flags": null
+                            },
+                            "message": "Slug should be in kabab case eg this-is-great"
+                        }
+                    ],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "id": "datePublished",
+                    "name": "DatePublished",
+                    "type": "Date",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                },
+                {
+                    "id": "bodym",
+                    "name": "BodyM",
+                    "type": "Text",
+                    "localized": false,
+                    "required": true,
+                    "validations": [],
+                    "disabled": false,
+                    "omitted": false
+                }
+            ],
+            "sys": {
+                "space": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Space",
+                        "id": "wjg1udsw901v"
+                    }
+                },
+                "id": "theCodeTransposerBlogPosts",
+                "type": "ContentType",
+                "createdAt": "2020-06-13T15:15:04.281Z",
+                "updatedAt": "2020-07-15T12:23:43.559Z",
+                "environment": {
+                    "sys": {
+                        "id": "master",
+                        "type": "Link",
+                        "linkType": "Environment"
+                    }
+                },
+                "publishedVersion": 21,
+                "publishedAt": "2020-07-15T12:23:43.559Z",
+                "firstPublishedAt": "2020-06-13T15:15:04.750Z",
+                "createdBy": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "User",
+                        "id": "2HwM4T1sZpIySOGHJe11lx"
+                    }
+                },
+                "updatedBy": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "User",
+                        "id": "2HwM4T1sZpIySOGHJe11lx"
+                    }
+                },
+                "publishedCounter": 11,
+                "version": 22,
+                "publishedBy": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "User",
+                        "id": "2HwM4T1sZpIySOGHJe11lx"
+                    }
+                }
+            }
+        }
+    ]
+}
