@@ -127,3 +127,7 @@ https://www.gatsbyjs.org/docs/typography-js/
 Icons 
 
 https://react-icons.github.io/react-icons/icons?name=fi
+
+## Changelog
+
+- 19/07/2020 - Added ability to embed assets like youtube videos, or tweets.

@@ -62,9 +62,11 @@ module.exports = {
                             lineNumbers: true
                         }
                     },
+                    `gatsby-remark-embedder`
                 ]
             }
         },
+        `gatsby-plugin-twitter`,
         {
             resolve: `gatsby-plugin-typography`,
             options: {
