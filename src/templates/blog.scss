@@ -1,5 +1,20 @@
 @import '../styles/colours.scss';
 
+$twitterLogo: url('../../static/twittericon.png');
+
+.twitter-tweet {
+    border:0 solid #1da1f2;
+    color: #14171A;
+    border-left:15px solid #1da1f2;
+}
+
+.twitter-tweet::before {
+    content: $twitterLogo; 
+    position:absolute;
+    left:5px;
+    top:bir;
+}
+
 blockquote {
     border:0 solid $dark-coal;
     display:block;
@@ -10,7 +25,7 @@ blockquote {
     font-size:20px;
     font-weight: 700;
     line-height:1.2;
-    color: $dark-orange;
+    color: $dark-coal;
     text-align:justify;
     border-left:15px solid $dark-coal;
     -moz-box-shadow:2px 2px 15px $shadow;
@@ -23,7 +38,7 @@ blockquote::before {
     font-family:Georgia,serif;
     font-size:60px;
     font-weight:bold;
-    color: $dark-orange;
+    color: $dark-coal;
     position:absolute;
     left:10px;
     top:5px
