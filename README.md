@@ -128,6 +128,12 @@ Icons
 
 https://react-icons.github.io/react-icons/icons?name=fi
 
+## Embedding content
+
+You can embed content such as twitter tweets or youtube videos into your blog posts. Click below for a full list of embeded link formats:
+
+https://github.com/MichaelDeBoey/gatsby-remark-embedder 
+
 ## Changelog
 
 - 19/07/2020 - Added ability to embed assets like youtube videos, or tweets.
