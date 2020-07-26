@@ -42,6 +42,19 @@ module.exports = {
                 path: `${__dirname}/src/`
             }
         },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              name: `Faesel.Com`,
+              short_name: `Faesel.Com`,
+              start_url: `/`,
+              background_color: `#f4f4f4`,
+              theme_color: `#2b2b2b`,
+              display: `standalone`,
+              icon: `src/images/icon.png`
+            },
+        },
+        `gatsby-plugin-offline`,
         'gatsby-plugin-sharp',
         {
             resolve: 'gatsby-transformer-remark',
