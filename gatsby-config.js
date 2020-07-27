@@ -75,7 +75,14 @@ module.exports = {
                             lineNumbers: true
                         }
                     },
-                    `gatsby-remark-embedder`
+                    `gatsby-remark-embedder`,
+                    {
+                        resolve: "gatsby-remark-external-links",
+                        options: {
+                          target: "_blank",
+                          rel: "nofollow"
+                        }
+                    }
                 ]
             }
         },
