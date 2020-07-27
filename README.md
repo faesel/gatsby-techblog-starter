@@ -138,3 +138,4 @@ https://github.com/MichaelDeBoey/gatsby-remark-embedder
 
 - 19/07/2020 - Added ability to embed assets like youtube videos, or tweets.
 - 26/07/2020 - Added a website manifest file, and offline support
+- 27/07/2020 - Modified links in markdown to have target _blank and nofollow
