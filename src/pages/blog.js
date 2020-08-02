@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+import { FiCalendar, FiClock } from "react-icons/fi";
 
 import Layout from '../components/layout'
 import Head from "../components/head"
@@ -43,7 +44,7 @@ const BlogPage = () => {
                         <li className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.slug}`}>
                                 <h2>{edge.node.title}</h2>
-                                <p><b>Date Published: </b>{edge.node.datePublished} <b>Reading Time:</b> {edge.node.bodym.childMarkdownRemark.timeToRead} minutes</p>
+                                <p><b><FiCalendar title="Date Published" /></b> {props.data.contentfulBlog.datePublished}&nbsp;&nbsp;<b><FiClock title="Reading Time" /></b> {props.data.contentfulBlog.bodym.childMarkdownRemark.timeToRead} Minutes</p>
                                 <img src={`https:${edge.node.hero.file.url}`} alt={edge.node.hero.title}></img>
                                 <p>{edge.node.bodym.childMarkdownRemark.excerpt}</p>
                                 <ol className={blogStyles.tags}>
