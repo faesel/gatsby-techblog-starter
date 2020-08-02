@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 import { DiscussionEmbed } from "disqus-react"
+import { FiCalendar, FiClock } from "react-icons/fi";
 
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -63,7 +64,7 @@ const Blog = props => {
         datePublished={props.data.contentfulBlog.iso8601DatePublished} />
 
       <h1>{props.data.contentfulBlog.title}</h1>
-      <p><b>Date Published:</b> {props.data.contentfulBlog.datePublished} <b>Reading Time:</b> {props.data.contentfulBlog.bodym.childMarkdownRemark.timeToRead} minutes</p>
+      <p><FiCalendar title="Date Published" /> {props.data.contentfulBlog.datePublished}&nbsp;&nbsp;<FiClock title="Reading Time" /> {props.data.contentfulBlog.bodym.childMarkdownRemark.timeToRead} Minutes</p>
       <ol className="tags">
         {props.data.contentfulBlog.tags.map(tag =>
             (
