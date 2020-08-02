@@ -107,7 +107,7 @@ Color palette was chosen from coolors.co.
 
 https://coolors.co/palettes/trending
 
-All colors can be found in `styles.scss` file
+All colors can be found in `colours.scss` file
 
 
 ## 👩‍💻 Customising Rendering code (OPTIONAL)
