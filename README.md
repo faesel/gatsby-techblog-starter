@@ -1,17 +1,18 @@
 # Introduction
 
-This is a tech blog template built with Gatsby, Contentful and Disqus. Its free to use for anyone, and really easy to configure. Check it out here [faesel.com](https://www.faesel.com/blog/gatsby-tech-blog-starter).
+This is a tech blog template built with Gatsby, Contentful and Disqus. Its free to use for anyone this includes all costs aside from a custom domain (which is optional), and really easy to configure. Check it out here [faesel.com](https://www.faesel.com/blog/gatsby-tech-blog-starter).
 
-## 🏃‍♂️ Running
+The aim of this project is to encourage developers to move away from 'paid for' blogging services that limit readership with subscription models, and truly become owners of their words.
 
-1. To run for development - `npm run develop`
-2. To clean out temp files - `npm run clean`
+## Features
 
-Url for accessing the website:
-`http://localhost:8000`
-
-Url for accessing graphql:
-`http://localhost:8000/___graphql`
+1. Content management through Contentful & Markdown Editing
+2. Built in mobile responsive with offline support
+3. Build in SEO Optimization built in
+4. Built in code rendering with theming
+5. Built in embedding of sites like Twitter, Youtube etc..
+6. Built in sitemap generation 
+7. Built in RSS generation
 
 ## 🔧 Configuration (REQUIRED)
 
@@ -90,6 +91,17 @@ CONTENTFUL_ACCESS_TOKEN=CAN BE SOURCED FROM CONTENTFUL SETTINGS
 GOOGLE_TRACKING_ID=CAN BE SOURCED FROM GOOGLE ANAYTICS
 GATSBY_DISQUS_NAME=CAN BE SOURCED FROM DISCUS
 ```
+
+## 🏃‍♂️ How to run the project
+
+1. To run for development - `npm run develop`
+2. To clean out temp files - `npm run clean`
+
+Url for accessing the website:
+`http://localhost:8000`
+
+Url for accessing graphql:
+`http://localhost:8000/___graphql`
 
 ## 💫 Deploy
 
