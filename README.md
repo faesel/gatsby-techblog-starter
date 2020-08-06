@@ -4,7 +4,7 @@ This is a tech blog template built with Gatsby, Contentful and Disqus. Its free 
 
 The aim of this project is to encourage developers to move away from 'paid for' blogging services that limit readership with subscription models, and truly become owners of their words.
 
-## Features
+## ⭐ Features
 
 1. Content management through Contentful & Markdown Editing
 2. Built in mobile responsive with offline support
@@ -140,13 +140,13 @@ Icons
 
 https://react-icons.github.io/react-icons/icons?name=fi
 
-## Embedding content
+## 📺 Embedding content
 
 You can embed content such as twitter tweets or Youtube videos into your blog posts. Click below for a full list of embedded link formats:
 
 https://github.com/MichaelDeBoey/gatsby-remark-embedder 
 
-## Changelog
+## 🚀 Changelog
 
 - 19/07/2020 - Added ability to embed assets like youtube videos, or tweets.
 - 26/07/2020 - Added a website manifest file, and offline support
