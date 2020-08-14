@@ -152,3 +152,4 @@ https://github.com/MichaelDeBoey/gatsby-remark-embedder
 - 26/07/2020 - Added a website manifest file, and offline support
 - 27/07/2020 - Modified links in markdown to have target _blank and nofollow
 - 02/08/2020 - Added Github style auto link headers, added icons for post publish date and reading time
+- 14/08/2020 - Added code to remove trailing slashes from urls
