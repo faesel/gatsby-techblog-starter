@@ -20,7 +20,7 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@deckdeckgo/highlight-code": "^1.1.1",
     "disqus-react": "^1.0.9",
-    "gatsby": "^2.23.11",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-feed": "^2.5.9",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^2.4.21",
